@@ -5,7 +5,7 @@ categories: [Network, VyOS, FOSS]
 tags: [VyOS]
 ---
 
-# Updating VyOS
+# Updating VyOS - Say what now?
 
 If you're lucky enough to have a subscription, either through payment or contribution to this amazing project you can freely download LTS images. 
 For the rest of us there are two major options, building your own image or leveraging the rolling release. 
@@ -19,15 +19,6 @@ It's important to note that these have the following disclaimer "Nightly builds 
 Rather than worrying about picking out the most recent build from the list, we can use the following link to automatically get the lastest nightly build. 
 
 https://s3-us.vyos.io/rolling/current/vyos-rolling-latest.iso
-
-
-# Updating
-
-This isn't a best practice guide, its merely what I do. 
-
-Check disk space - I want atleast 10GB free, just to safe. Images are about 400MB, but I want some wiggle room. 
-Check current version - Just so I know, as we're using "vyos-rolling-latest.iso" its nice to have a record of where I was. 
-Crack on and grow some balls. 
 
 # Checking the current version
 
