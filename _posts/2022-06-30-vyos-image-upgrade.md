@@ -24,6 +24,12 @@ https://s3-us.vyos.io/rolling/current/vyos-rolling-latest.iso
 
 A simple show version will return the build that's currently running. 
 
+Command: "show version"
+
+```bash
+show version
+```
+Example:
 ```bash
 richj@ph-gfw01:~$ show version
 
@@ -58,7 +64,13 @@ Always recommended to have a backup, well three to be precise; 2 on site and one
 
 SSD's are so cheap these days, I'm somewhat spoilt for space. Always worth checking there's sufficent space before proceeding; I've got 200GB free, whislt I've not monitored how little space you need I'd suggest you want atleast 5GB, or more on the safe side. This is a little large, but gives you wiggle room to download more images, revert to a previous image etc... Do what you're comfortable with. 
 
+Command: "df -h"
+
+```bash
+df -h
 ```
+Example:
+```bash
 richj@ph-gfw01:~$ df -h
 Filesystem      Size  Used Avail Use% Mounted on
 udev            3.4G     0  3.4G   0% /dev
@@ -80,7 +92,11 @@ tmpfs           698M     0  698M   0% /run/user/1004
 
 If you are on the tight size of disk space, you may be able to delete a previous image, run "show system image", while it'll show you the one you've booted from, you may have chosen a different boot image manually. Worth checking the versions from the previous step to ensure you don't remove a known working image.  
 
+```bash
+show system image
 ```
+Example: 
+```bash
 richj@ph-gfw01:~$ show system image
 The system currently has the following image(s) installed:
 
@@ -99,6 +115,12 @@ You'll be prompted to accept that the signature isn't valued. Rolling releases a
 
 You can give the image a name, save you configuration and copy over SSH keys. I keep the image name as recommended, I copy my configuration and I keep my keys. All things you can change if you like... 
 
+Command: "add system image https://s3-us.vyos.io/rolling/current/vyos-rolling-latest.iso"
+
+```bash
+add system image https://s3-us.vyos.io/rolling/current/vyos-rolling-latest.iso
+```
+Example:
 ```
 richj@ph-gfw01:~$ add system image https://s3-us.vyos.io/rolling/current/vyos-rolling-latest.iso
 Trying to fetch ISO file from https://s3-us.vyos.io/rolling/current/vyos-rolling-latest.iso...
@@ -134,6 +156,12 @@ Done.
 
 Now its just a quick reboot and you'll be on on the new image - "reboot" and confirm the decision. This'll obviously mean you're unit is down for a few minutes. In my experience this is a long reboot - more so than normal. Certainly enough time to make a cup of tea. 
 
+Command: "reboot"
+
+```bash
+reboot
+```
+Example:
 ```
 richj@ph-gfw01:~$ reboot
 Are you sure you want to reboot this system? [y/N] y
@@ -141,6 +169,16 @@ Are you sure you want to reboot this system? [y/N] y
 
 After you're suitable refreshed, you should be able to SSH back onto the unit and confirm the version you're on - you can either do a "show version" or "show system images"
 
+Command: "show version"
+Command: "show system images"
+
+```bash
+show version
+```
+```bash
+show system images
+```
+Example:
 ```
 richj@ph-gfw01:~$ show version
 
