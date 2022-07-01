@@ -121,7 +121,7 @@ Command: "add system image https://s3-us.vyos.io/rolling/current/vyos-rolling-la
 add system image https://s3-us.vyos.io/rolling/current/vyos-rolling-latest.iso
 ```
 Example:
-```
+```bash
 richj@ph-gfw01:~$ add system image https://s3-us.vyos.io/rolling/current/vyos-rolling-latest.iso
 Trying to fetch ISO file from https://s3-us.vyos.io/rolling/current/vyos-rolling-latest.iso...
 Downloading...
@@ -162,7 +162,7 @@ Command: "reboot"
 reboot
 ```
 Example:
-```
+```bash
 richj@ph-gfw01:~$ reboot
 Are you sure you want to reboot this system? [y/N] y
 ```
@@ -179,7 +179,7 @@ show version
 show system images
 ```
 Example:
-```
+```bash
 richj@ph-gfw01:~$ show version
 
 Version:          VyOS 1.4-rolling-202207010217
