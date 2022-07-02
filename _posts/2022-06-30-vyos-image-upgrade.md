@@ -1,5 +1,5 @@
 ---
-title: VyOS Image Updating - Rolling
+title: VyOS - Rolling Image Updates
 date: 2022-06-30 20:00:00 +01:00
 categories: [Network, VyOS, FOSS]
 tags: [VyOS]
@@ -55,9 +55,7 @@ Copyright:        VyOS maintainers and contributors
 
 # Backup 3 2 1
 
-Always recommended to have a backup, well three to be precise; 2 on site and one off site. 
-
-
+Always recommended to have a backup, well three to be precise; 2 on site and one off site. I'm not too fussed about ensuring I have logs, I only store my configurations externally. The only recommandation I can make here is to ensure you've exported your configuration which will be discuess in a seperate post as it can be quite involved. 
 
 
 # Sufficent space to proceed?
